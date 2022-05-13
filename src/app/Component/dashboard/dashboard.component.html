@@ -1,0 +1,12 @@
+<div class="row container">
+    <button (click)="openModal()">open my modal</button>
+    <div #myModal disabled="!openModal()">
+        
+            <h1>Modal header</h1>
+        
+           <p> Hello Modal!</p>
+        
+            <button class="btn btn-primary" (click)="closeModal()">close</button>
+        
+    </div>
+</div>

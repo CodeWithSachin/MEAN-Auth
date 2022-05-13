@@ -1,0 +1,28 @@
+<div class="container">
+    <div class="jumbotron text-center py-5">
+        <h1>MEAN Authentication APP</h1>
+        <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatem repellat dolores, deleniti sunt
+            aspernatur minus.</p>
+        <div>
+            <a routerLink="/signup" class="btn btn-primary" *ngIf="!authService.loggedIn()">Register</a>
+            <a routerLink="/login" class="btn btn-default" *ngIf="!authService.loggedIn()">Login</a>
+        </div>
+    </div>
+    <div class="row py-5">
+        <div class="col-md-4">
+            <h3>Express Backend</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad soluta amet totam culpa, nemo reiciendis
+                molestias beatae possimus iure quas.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>Angular Cli</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A nostrum quidem delectus, vero laudantium tenetur
+                eveniet pariatur perferendis nihil exercitationem.</p>
+        </div>
+        <div class="col-md-4">
+            <h3>JWT Token</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corporis totam architecto porro? Aut distinctio
+                officia, maxime ad numquam eaque illo!</p>
+        </div>
+    </div>
+</div>

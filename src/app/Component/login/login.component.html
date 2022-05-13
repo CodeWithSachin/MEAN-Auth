@@ -1,0 +1,13 @@
+<h4 class="text-center py-3 fs-1">Login</h4>
+
+<form (submit)="onLoginSubmit()" class="container">
+    <div class="mb-3">
+        <label for="username" class="form-label">Username</label>
+        <input type="text" class="form-control" name="username" id="username" [(ngModel)]="username">
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" name="password" id="password" [(ngModel)]="password">
+    </div>
+    <input type="submit" class="btn btn-primary" value="Login" [disabled]="!username || !password">
+</form>
